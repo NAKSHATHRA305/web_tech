@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HOME</title>
+    <style>
+        body 
+        {
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+        }
+        body::before 
+        {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://s.yimg.com/ny/api/res/1.2/e5E.4NlTUhft3b67Lf4Fgg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzM-/https://media.zenfs.com/en/insidermonkey.com/6afae5a0c67ebb2f20b1dd1892c805fd') no-repeat center;
+            background-size: cover;
+        }
+        .text-box 
+        {
+            width: 600px; 
+            height: auto; 
+            background-color: rgba(255, 255, 255, 0.7); 
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            padding: 30px;
+            border-radius: 10px; 
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Strong shadow around text box */
+            opacity: 0.9;
+        }
+        .text-box h3 
+        {
+            font-size: 24px; 
+            font-weight: bolder;
+        }
+        .home
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .home h2 
+        {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .home:hover 
+        {
+            background-color: rgba(255, 255, 255, 0.85);
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .text-box h3:hover 
+        {
+            color: #1a447f; 
+            transition: color 0.3s ease-in-out;
+        }
+        .book-now-section 
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-book 
+        {
+            background-color: #ffcc00;
+            color: black;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-book:hover 
+        {
+            background-color: #e6b800;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="home">
+                <h2><b>HOME</b></h2>
+            </div>
+            <div class="text-box">
+                <h3><b>
+                    Welcome to Dudu Airlines, where your journey begins with comfort, elegance, 
+                    and unbeatable service. Whether you're traveling for business or leisure, 
+                    we ensure a seamless flight experience with affordable fares, spacious seating, 
+                    and world-class amenities. Book your flight today and let us take you to new heights 
+                    of travel comfort.
+                </b></h3>
+            </div>
+            <div class="book-now-section">
+                <button class="btn btn-warning btn-lg btn-book">Book Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
